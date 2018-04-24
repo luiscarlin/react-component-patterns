@@ -9,7 +9,7 @@ const SmallCircle = props => {
     background: props.color,
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   }
 
   const text = {

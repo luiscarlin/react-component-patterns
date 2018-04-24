@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-const title = 'React Component Patters';
+import App from './App.jsx'
 
 ReactDOM.render(
-  <div>{title}</div>,
+  <App />,
   document.getElementById('app')
 )
 

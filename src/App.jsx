@@ -6,18 +6,24 @@ export default class App extends Component {
 
     const container = {
       display: 'flex',
-      flexDirection: 'column'
-      
+      flexWrap: 'wrap',
+      justifyContent: 'center'
+    }
+    
+    const item = {
+      border: 'solid',
+
     }
 
     return (
       <div style={container}>
-          <SmallCircle color='#0d4261'/>
-          <SmallCircle color='#0d4261'/>
-          <SmallCircle color='#0d4261'/>
-          <SmallCircle color='#0d4261'/>
-          <SmallCircle color='#0d4261'/>
-          <SmallCircle color='#0d4261'/>
+        <div style={item}><SmallCircle color='#0d4261'/></div>
+        <div style={item}><SmallCircle color='#0d4261'/></div>
+        <div style={item}><SmallCircle color='#0d4261'/></div>
+        <div style={item}><SmallCircle color='#0d4261'/></div>
+        <div style={item}><SmallCircle color='#0d4261'/></div>
+        <div style={item}><SmallCircle color='#0d4261'/></div>
+        <div style={item}><SmallCircle color='#0d4261'/></div>
       </div>
     )
   }

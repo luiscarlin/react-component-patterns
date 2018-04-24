@@ -2,18 +2,20 @@ import React from 'react'
 
 const SmallCircle = props => {
 
- const circle = {
-   width: '100px',
-   height: '100px',
-   borderRadius: '50%',
-   background: props.color,
-   display: 'flex',
-   justifyContent: 'center',
-   alignItems: 'center',
+  const circle = {
+    width: '30vw',
+    height: '30vw',
+    borderRadius: '50%',
+    background: props.color,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '1em'
   }
 
   const text = {
-    color: 'white'
+    color: 'white',
+    fontSize: '4vw'
   }
   
   return (

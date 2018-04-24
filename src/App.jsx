@@ -12,18 +12,20 @@ export default class App extends Component {
     
     const item = {
       border: 'solid',
-
+      width: '25em',
+      height: '25em',
+      padding: '1em'
     }
 
     return (
       <div style={container}>
-        <div style={item}><SmallCircle color='#0d4261'/></div>
-        <div style={item}><SmallCircle color='#0d4261'/></div>
-        <div style={item}><SmallCircle color='#0d4261'/></div>
-        <div style={item}><SmallCircle color='#0d4261'/></div>
-        <div style={item}><SmallCircle color='#0d4261'/></div>
-        <div style={item}><SmallCircle color='#0d4261'/></div>
-        <div style={item}><SmallCircle color='#0d4261'/></div>
+        <div style={item}><SmallCircle radius='10em' color='#0d4261'/></div>
+        <div style={item}><SmallCircle radius='10em' color='#0d4261'/></div>
+        <div style={item}><SmallCircle radius='10em' color='#0d4261'/></div>
+        <div style={item}><SmallCircle radius='10em' color='#0d4261'/></div>
+        <div style={item}><SmallCircle radius='10em' color='#0d4261'/></div>
+        <div style={item}><SmallCircle radius='10em' color='#0d4261'/></div>
+        <div style={item}><SmallCircle radius='10em' color='#0d4261'/></div>
       </div>
     )
   }

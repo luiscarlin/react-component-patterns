@@ -3,19 +3,18 @@ import React from 'react'
 const SmallCircle = props => {
 
   const circle = {
-    width: '30vw',
-    height: '30vw',
+    width: props.radius,
+    height: props.radius,
     borderRadius: '50%',
     background: props.color,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: '1em'
   }
 
   const text = {
     color: 'white',
-    fontSize: '4vw'
+    fontSize: '1.5em'
   }
   
   return (

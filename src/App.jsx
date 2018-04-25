@@ -36,7 +36,7 @@ export default class App extends Component {
           <Card title='High Order Component' description='lorem'>
             <SmallCircle radius='5em'/>
           </Card>
-          <Card title='Stateless Component' description='lorem'>
+          <Card title='Component w/ Render Callbacks' description='lorem'>
             <SmallCircle radius='5em'/>
           </Card>
         </div>

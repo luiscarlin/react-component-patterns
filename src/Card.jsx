@@ -11,8 +11,9 @@ const card = {
 }
 
 const description = {
-  padding: '0.5em', 
+  padding: '2em', 
   height: '20%',
+  textAlign: 'center'
 }
 
 const title = {

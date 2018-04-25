@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SmallCircle from './SmallCircle.jsx'
+import Card from './Card.jsx'
 
 export default class App extends Component {
   render () {
@@ -37,19 +38,24 @@ export default class App extends Component {
 
     return (
       <div style={container}>
-        <div style={card}>
-          <div style={title}>Stateless Component</div>
-          <div style={graph}>
-            <SmallCircle radius='10em' color='#0d4261'/>
-          </div>
-          <div style={description}>Loremipsum</div>
-        </div>
-        <div style={card}><SmallCircle radius='10em' color='#0d4261'/></div>
-        <div style={card}><SmallCircle radius='10em' color='#0d4261'/></div>
-        <div style={card}><SmallCircle radius='10em' color='#0d4261'/></div>
-        <div style={card}><SmallCircle radius='10em' color='#0d4261'/></div>
-        <div style={card}><SmallCircle radius='10em' color='#0d4261'/></div>
-        <div style={card}><SmallCircle radius='10em' color='#0d4261'/></div>
+        <Card title='Stateless Component' description='lorem'>
+          <SmallCircle />
+        </Card>
+        <Card title='Stateless Component' description='lorem'>
+          <SmallCircle />
+        </Card>
+        <Card title='Stateless Component' description='lorem'>
+          <SmallCircle />
+        </Card>
+        <Card title='Stateless Component' description='lorem'>
+          <SmallCircle />
+        </Card>
+        <Card title='Stateless Component' description='lorem'>
+          <SmallCircle />
+        </Card>
+        <Card title='Stateless Component' description='lorem'>
+          <SmallCircle />
+        </Card>
       </div>
     )
   }

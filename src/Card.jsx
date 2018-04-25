@@ -6,6 +6,7 @@ const card = {
   border: 'solid',
   width: '25em',
   height: '25em',
+  margin: '1em'
 }
 
 const description = {
@@ -16,7 +17,7 @@ const description = {
 
 const title = {
   textAlign: 'center',
-  fontSize: '2em',
+  fontSize: '1.8em',
   padding: '0.5em',
   height: '5%',
   border: 'solid'

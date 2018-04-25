@@ -14,7 +14,7 @@ export default class App extends Component {
 
     const title = {
       color: 'black',
-      fontSize: '5em',
+      fontSize: '4em',
       textAlign: 'center'
     }
 

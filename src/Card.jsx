@@ -3,16 +3,16 @@ import React from 'react'
 const card = {
   display: 'flex',
   flexDirection: 'column',
-  border: 'solid',
+  borderStyle: 'solid',
+  borderWidth: '0.3px',
   width: '25em',
-  height: '25em',
+  height: '30em',
   margin: '1em'
 }
 
 const description = {
   padding: '0.5em', 
   height: '20%',
-  border: 'solid'
 }
 
 const title = {
@@ -20,7 +20,6 @@ const title = {
   fontSize: '1.8em',
   padding: '0.5em',
   height: '5%',
-  border: 'solid'
 }
 
 const graph = {
@@ -29,7 +28,6 @@ const graph = {
   alignItems: 'center',
   padding: '0.5em',
   height: '65%',
-  border: 'solid'
 }
 
 

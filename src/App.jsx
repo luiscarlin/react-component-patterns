@@ -5,7 +5,6 @@ import Card from './Card.jsx'
 
 export default class App extends Component {
   render() {
-
     const container = {
       display: 'flex',
       flexWrap: 'wrap',

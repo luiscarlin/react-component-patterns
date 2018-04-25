@@ -9,20 +9,26 @@ const card = {
 }
 
 const description = {
-  margin: '1em'
+  padding: '0.5em', 
+  height: '20%',
+  border: 'solid'
 }
 
 const title = {
   textAlign: 'center',
   fontSize: '2em',
-  margin: '1em'
+  padding: '0.5em',
+  height: '5%',
+  border: 'solid'
 }
 
 const graph = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  margin: '1em'
+  padding: '0.5em',
+  height: '65%',
+  border: 'solid'
 }
 
 

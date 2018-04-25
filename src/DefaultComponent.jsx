@@ -1,12 +1,11 @@
 import React from 'react'
 
-
-const SmallCircle = props => {
+const DefaultComponent = props => {
   const circle = {
     width: props.radius,
     height: props.radius,
     borderRadius: '50%',
-    background: '#0d4261',
+    background: 'black',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -20,9 +19,9 @@ const SmallCircle = props => {
   }
   return (
     <div style={circle}>
-      <div style={text}>render, props, context</div>
+      <div style={text}>lifecycle events, state, render, props, context</div>
     </div>
   )
 }
 
-export default SmallCircle
+export default DefaultComponent

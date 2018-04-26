@@ -3,6 +3,7 @@ import Card from './Card.jsx'
 import DefaultComponent from './DefaultComponent.jsx'
 import Stateless from './Stateless.jsx'
 import Stateful from './Stateful.jsx'
+import Container from './Container.jsx'
 
 export default class App extends Component {
   render() {
@@ -32,7 +33,7 @@ export default class App extends Component {
             <Stateful radius='16em'/>
           </Card>
           <Card title='Container Component' description='lorem'>
-            <Stateless radius='5em'/>
+            <Container radius='16em'/>
           </Card>
           <Card title='High Order Component' description='lorem'>
             <Stateless radius='5em'/>

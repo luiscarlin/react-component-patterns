@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Stateless = props => {
   const circle = {
     width: props.radius,
@@ -20,7 +19,7 @@ const Stateless = props => {
   }
   return (
     <div style={circle}>
-      <div style={text}>render, props, context</div>
+      <div style={text}>{ props.innerText || 'render, props, context' }</div>
     </div>
   )
 }

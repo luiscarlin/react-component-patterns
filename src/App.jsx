@@ -23,16 +23,16 @@ export default class App extends Component {
       <div>
         <h1 style={title}>React Component Patterns</h1>
         <div style={container}>
-          <Card title='Component' description='This is the React default component. It is a class that extends { Component } from react.'>
+          <Card title='Default Component' description='This is the React default component. It manages its own state and renders its own HTML. All in one package.'>
             <DefaultComponent radius='16em'/>
           </Card>
-          <Card title='Stateless Component' description='Also called "dumb", "presenter", "view", or "display". It is a function that returns HTML elements.'>
+          <Card title='Stateless Component' description='Also called "dumb", "presenter", "view", or "display". It is a function that returns HTML elements. It is a subset of the Default Component. Why to extract this? Because we can now combine it with other components.'>
             <Stateless radius='16em'/>
           </Card>
-          <Card title='Stateful Component' description='Also called "smart", "container", "controller", or "data". Uses APIs related to life cycle and state.'>
+          <Card title='Stateful Component' description='Also called "smart", "container", "controller", or "data". Uses APIs related to life cycle and state. It is a subset of the Default Component. Why? Because combination of components.'>
             <Stateful radius='16em'/>
           </Card>
-          <Card title='Container Component' description='Now, you can reuse the Stateless Component in Stateful Components to create red circles, yellow circles, blue circles, setc'>
+          <Card title='Container Component' description='Now, you can reuse the Stateless Component in Stateful Components to create a red circle component, yellow circle component, blue circle component, etc. Why? Beause the more we reuse the less we duplicate.'>
             <Container radius='16em'/>
           </Card>
           <Card title='High Order Component' description='lorem'>

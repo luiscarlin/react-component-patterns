@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const SmallCircle = props => {
+const Stateless = props => {
   const circle = {
     width: props.radius,
     height: props.radius,
@@ -25,4 +25,4 @@ const SmallCircle = props => {
   )
 }
 
-export default SmallCircle
+export default Stateless

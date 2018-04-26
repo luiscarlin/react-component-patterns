@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Circle = props => {
+const Stateful = props => {
   const circle = {
     width: props.radius,
     height: props.radius,
@@ -26,4 +26,4 @@ const Circle = props => {
   )
 }
 
-export default Circle
+export default Stateful

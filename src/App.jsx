@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import DefaultComponent from './DefaultComponent.jsx'
-import SmallCircle from './SmallCircle.jsx'
-import Circle from './Circle.jsx'
 import Card from './Card.jsx'
+import DefaultComponent from './DefaultComponent.jsx'
+import Stateless from './Stateless.jsx'
+import Stateful from './Stateful.jsx'
 
 export default class App extends Component {
   render() {
@@ -26,19 +26,19 @@ export default class App extends Component {
             <DefaultComponent radius='16em'/>
           </Card>
           <Card title='Stateless Component' description='Also called "dumb", "presenter", "view", or "display". It is a function that returns HTML elements.'>
-            <SmallCircle radius='16em'/>
+            <Stateless radius='16em'/>
           </Card>
           <Card title='Stateful Component' description='Also called "smart", "container", "controller", or "data". Uses APIs related to life cycle and state.'>
-            <Circle radius='16em'/>
+            <Stateful radius='16em'/>
           </Card>
           <Card title='Container Component' description='lorem'>
-            <SmallCircle radius='5em'/>
+            <Stateless radius='5em'/>
           </Card>
           <Card title='High Order Component' description='lorem'>
-            <SmallCircle radius='5em'/>
+            <Stateless radius='5em'/>
           </Card>
           <Card title='Component w/ Render Callbacks' description='lorem'>
-            <SmallCircle radius='5em'/>
+            <Stateless radius='5em'/>
           </Card>
         </div>
       </div>

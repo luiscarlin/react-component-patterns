@@ -1,7 +1,27 @@
 import React from 'react'
-import Stateless from './Stateless.jsx'
 
-export default class HighOrder extends React.Component {
+const HighOrder = (ContainerComponent, props) => {
+  const circle = {
+    width:'16em',
+    height: '16em',
+    borderRadius: '50%',
+    display: 'flex',
+    flewDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderStyle: 'dashed',
+    borderColor: 'black'
+  }
+  return (
+    <div style={circle}>
+      <ContainerComponent { ...props } />
+    </div>
+  )
+}
+
+export default HighOrder
+
+/*export default class HighOrder extends React.Component {
   render() {
     const circle = {
       width: this.props.radius,
@@ -31,4 +51,4 @@ export default class HighOrder extends React.Component {
       </div>
     )
   }
-}
+}*/

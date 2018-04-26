@@ -4,6 +4,7 @@ import DefaultComponent from './DefaultComponent.jsx'
 import Stateless from './Stateless.jsx'
 import Stateful from './Stateful.jsx'
 import Container from './Container.jsx'
+import HighOrder from './HighOrder.jsx'
 
 export default class App extends Component {
   render() {
@@ -32,11 +33,11 @@ export default class App extends Component {
           <Card title='Stateful Component' description='Also called "smart", "container", "controller", or "data". Uses APIs related to life cycle and state. It is a subset of the Default Component. Why? Because combination of components.'>
             <Stateful radius='16em'/>
           </Card>
-          <Card title='Container Component' description='Now, you can reuse the Stateless Component in Stateful Components to create a red circle component, yellow circle component, blue circle component, etc. Why? Beause the more we reuse the less we duplicate.'>
+          <Card title='Container Component' description='Now, you can reuse the SAME Stateless Component in Stateful Components to create a red circle component, yellow circle component, blue circle component, etc. Why? Because the more we reuse the less we duplicate.'>
             <Container radius='16em'/>
           </Card>
-          <Card title='High Order Component' description='lorem'>
-            <Stateless radius='5em'/>
+          <Card title='High Order Component' description='This is a function that returns a component that wraps the passed component. Example: HighOrder(ComponentToWrap). Why? High Order Components allow you to dinamically compose components on the fly.'>
+            { HighOrder(Container, { radius: '12em'}) }
           </Card>
           <Card title='Component w/ Render Callbacks' description='lorem'>
             <Stateless radius='5em'/>

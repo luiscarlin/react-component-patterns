@@ -26,7 +26,7 @@ export default class Container extends React.Component {
       <div style={circle}>
         <div style={text}>Stateful</div>
         <div>
-          <Stateless radius='8em' innerText='Stateless'/>
+          <Stateless radius='6em' innerText='Stateless'/>
         </div>
       </div>
     )

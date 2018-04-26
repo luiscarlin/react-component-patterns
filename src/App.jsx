@@ -4,7 +4,7 @@ import DefaultComponent from './DefaultComponent.jsx'
 import Stateless from './Stateless.jsx'
 import Stateful from './Stateful.jsx'
 import Container from './Container.jsx'
-import HighOrder from './HighOrder.jsx'
+import HigherOrder from './HigherOrder.jsx'
 
 export default class App extends Component {
   render() {
@@ -36,8 +36,8 @@ export default class App extends Component {
           <Card title='Container Component' description='Now, you can reuse the SAME Stateless Component in Stateful Components to create a red circle component, yellow circle component, blue circle component, etc. Why? Because the more we reuse the less we duplicate.'>
             <Container radius='16em'/>
           </Card>
-          <Card title='High Order Component' description='This is a function that returns a component that wraps the passed component. Example: HighOrder(ComponentToWrap). Why? High Order Components allow you to dinamically compose components on the fly.'>
-            { HighOrder(Container, { radius: '12em'}) }
+          <Card title='Higher Order Component' description='Also called "enhancer". This is a function that returns a component that wraps the passed component. Example: HigherOrder(ComponentToWrap). Why? Higher Order Components allow you to dinamically compose components on the fly.'>
+            { HigherOrder(Container, { radius: '12em'}) }
           </Card>
           <Card title='Component w/ Render Callbacks' description='lorem'>
             <Stateless radius='5em'/>

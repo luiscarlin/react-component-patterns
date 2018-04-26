@@ -32,7 +32,7 @@ export default class App extends Component {
           <Card title='Stateful Component' description='Also called "smart", "container", "controller", or "data". Uses APIs related to life cycle and state.'>
             <Stateful radius='16em'/>
           </Card>
-          <Card title='Container Component' description='lorem'>
+          <Card title='Container Component' description='Now, you can reuse the Stateless Component in Stateful Components to create red circles, yellow circles, blue circles, setc'>
             <Container radius='16em'/>
           </Card>
           <Card title='High Order Component' description='lorem'>

@@ -41,7 +41,7 @@ export default class App extends Component {
           <Card href={`${repo}/HigherOrder.jsx`} title='Higher Order Component' description='Also called "enhancer". This is a function that returns a component that wraps the passed component. Example: HigherOrder(ComponentToWrap). Why? Higher Order Components allow you to dinamically compose components on the fly.'>
             { HigherOrder(Container, { radius: '12em'}) }
           </Card>
-          <Card href={`${repo}/ComponentWRenderCallback.jsx`} title='Component w/ Render Callbacks' description='lorem'>
+          <Card href={`${repo}/ComponentWRenderCallback.jsx`} title='Component w/ Render Callbacks' description='This is a component that receives a function as a prop and calls it while rendering itself. The passed function renders another component, allowing components to be composed dynamically.'>
             <ComponentWRenderCallback radius='16em' renderCallback={ () =>  (<Stateless {...{radius: '8em', innerText: 'rendered with callback'}}/>)}/>
           </Card>
         </div>

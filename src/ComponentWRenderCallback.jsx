@@ -1,10 +1,6 @@
 import React from 'react'
 
 export default class ComponentWRenderCallback extends React.Component {
-  constructor() {
-    super()
-    this.state = { key: 'value' }
-  }
 
   render() {
     const circle = {

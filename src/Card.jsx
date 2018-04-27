@@ -6,12 +6,12 @@ const card = {
   borderStyle: 'solid',
   borderWidth: '0.3px',
   width: '25em',
-  height: '30em',
+  height: '35em',
   margin: '1em'
 }
 
 const description = {
-  padding: '2em', 
+  padding: '0.5em', 
   height: '20%',
   textAlign: 'center'
 }
@@ -20,7 +20,12 @@ const title = {
   textAlign: 'center',
   fontSize: '1.8em',
   padding: '0.5em',
-  height: '5%',
+  height: '10%'
+}
+
+const anchor = {
+  textDecoration: 'none',
+  color: 'black'
 }
 
 const graph = {
@@ -28,13 +33,15 @@ const graph = {
   justifyContent: 'center',
   alignItems: 'center',
   padding: '0.5em',
-  height: '65%',
+  height: '60%',
 }
 
 
 const Card = props => (
   <div style={card}>
-    <div style={title}>{props.title}</div>
+    <a href={props.href || '/'} target='_blank' style={anchor}>
+      <div style={title}>{props.title}</div>
+    </a>
     <div style={graph}>
       {props.children}
     </div>

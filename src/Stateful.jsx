@@ -6,7 +6,6 @@ export default class Stateful extends React.Component {
       width: this.props.radius,
       height: this.props.radius,
       borderRadius: '50%',
-      // background: '#0d4261',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

@@ -5,6 +5,7 @@ import Stateless from './Stateless.jsx'
 import Stateful from './Stateful.jsx'
 import Container from './Container.jsx'
 import HigherOrder from './HigherOrder.jsx'
+import ComponentWRenderCallback from './ComponentWRenderCallback.jsx'
 
 export default class App extends Component {
   render() {
@@ -40,8 +41,8 @@ export default class App extends Component {
           <Card href={`${repo}/HigherOrder.jsx`} title='Higher Order Component' description='Also called "enhancer". This is a function that returns a component that wraps the passed component. Example: HigherOrder(ComponentToWrap). Why? Higher Order Components allow you to dinamically compose components on the fly.'>
             { HigherOrder(Container, { radius: '12em'}) }
           </Card>
-          <Card title='Component w/ Render Callbacks' description='lorem'>
-            <Stateless radius='5em'/>
+          <Card href={`${repo}/ComponentWRenderCallback.jsx`} title='Component w/ Render Callbacks' description='lorem'>
+            <ComponentWRenderCallback radius='16em' renderCallback={ () =>  (<Stateless {...{radius: '8em', innerText: 'rendered with callback'}}/>)}/>
           </Card>
         </div>
       </div>
